@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo</title>
+        
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-100">
+        <header>
+            
+                <div class="">
+                    <img src="./Rectangle 1.png" class="mx-auto mt-28"  alt="">
+                    <img src="./Group (4).png" class="mx-auto relative -mt-64 mb-10" alt="">
+                </div>
+            
+        </header>
+
+        <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse bg-white">
+
+              <div class="card w-full shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Mobile Number</span>
+                    </label>
+                    <input id="mobile-number" type="number" placeholder="enter your number" class="input input-bordered bg-slate-100 text-black" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">PIN</span>
+                    </label>
+                    <input id="pin-number" type="text" placeholder="enter your PIN" class="input input-bordered bg-slate-100 text-black" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="login-btn" class="btn btn-info text-white">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./script/login.js"></script>
+</body>
+</html>
