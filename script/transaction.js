@@ -4,5 +4,6 @@ document.getElementById('Transaction-btn')
 
     handleToggle('add-money', 'none');
     handleToggle('cash-out', 'none');
+    handleToggle('transfer-money', 'none');
     handleToggle('Transaction-history', 'block');
 })

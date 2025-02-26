@@ -29,7 +29,7 @@ document.getElementById('cash-out-withdraw')
 
     const amount = getInputValueById('cash-out-amount');
     const pin = getInputValueById('pin');
-    const mainBalace = getInnerTextById('main-balance')
+    const mainBalace = getInnerTextById('main-balance');
 
     if(amount > mainBalace){
         alert('invalid amount');
@@ -51,7 +51,7 @@ document.getElementById('cash-out-withdraw')
 
 
             const div =  document.createElement('div');
-            div.classList.add('bg-blue-100')
+            div.classList.add('bg-blue-100', 'p-3', 'rounded', 'm-3', 'text-black')
 
             div.innerHTML = `
             <h1> cash out money</h1>

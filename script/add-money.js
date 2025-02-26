@@ -39,7 +39,7 @@ document.getElementById('add-money')
             // `
 
             const div =  document.createElement('div');
-            div.classList.add('bg-blue-100')
+            div.classList.add('bg-red-100', 'p-3', 'rounded', 'm-3', 'text-black')
 
             div.innerHTML = `
             <h1> Added money from ${selectedBank}</h1>

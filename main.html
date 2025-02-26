@@ -16,7 +16,7 @@
                     <h1 class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
                     <p>Available balance</p>
                 </div>
-                <button class="btn text-blue-500 bg-white">Log out</button>
+                <button id="log-out-btn" class="btn text-blue-500 bg-white">Log out</button>
             </nav>
 
             <section class="mt-10">
@@ -32,7 +32,7 @@
                         <img class="mx-auto" src="./Group (5).png" alt="">
                         <p class="text-[#08080880] text-center">Cash out</p>
                     </button>
-                    <button class="box hover:bg-sky-100 border-2 m-2 p-2 rounded-md">
+                    <button id="transfer-money-btn" class="box hover:bg-sky-100 border-2 m-2 p-2 rounded-md">
                         <img class="mx-auto" src="./Group (5).png" alt="">
                         <p class="text-[#08080880] text-center">Transfer Money</p>
                     </button>
@@ -133,6 +133,41 @@
 
                   </div>
                 </section>
+
+                <section id="transfer-money">
+                  <h2 class="my-10 text-black text-2xl font-bold pl-2">Transfer Money</h2>
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse bg-white">
+            
+                          <div class="card w-full shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text text-black text-base">User Account Number</span>
+                                </label>
+                                <input id="user-account" type="number" placeholder="Enter 11 digit account number" class="input input-bordered bg-slate-100 text-black" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text text-black text-base">Amount</span>
+                                </label>
+                                <input id="send-amount" type="number" placeholder="Amount to transfer" class="input input-bordered bg-slate-100 text-black" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text text-black text-base">PIN</span>
+                                </label>
+                                <input id="transfer-money-pin" type="text" placeholder="enter your PIN" class="input input-bordered bg-slate-100 text-black" required />
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="send-now-btn" class="btn btn-info text-white">Send Now</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                  </div>
+                </section>
             </section>
         </header>
     </section>
@@ -142,5 +177,7 @@
     <script src="./script/add-money.js"></script>
     <script src="./script/cash-out.js"></script>
     <script src="./script/transaction.js"></script>
+    <script src="./script/transfer.js"></script>
+    <script src="./script/logout.js"></script>
 </body>
 </html>
