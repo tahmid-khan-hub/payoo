@@ -4,20 +4,45 @@ document.getElementById('cash-out-withdraw')
 
     event.preventDefault();
 
-    const pin = document.getElementById('pin').value;
-    const pinNUmber = parseInt(pin);
+    // const pin = document.getElementById('pin').value;
+    // const pinNumber = parseInt(pin);
 
-    const amount = document.getElementById('cash-out-amount').value;
-    const totalAmount = parseFloat(amount);
+    // const amount = document.getElementById('cash-out-amount').value;
+    // const totalAmount = parseFloat(amount);
 
-    const balance = document.getElementById('main-balance').innerText;
-    const mainBalace = parseFloat(balance);
+    // const balance = document.getElementById('main-balance').innerText;
+    // const mainBalace = parseFloat(balance);
 
-    if(pinNUmber === 1234){
-        const sub = mainBalace - totalAmount;
-        document.getElementById('main-balance').innerText = sub;
+    // const account = document.getElementById('account');
+    // const accountNumber = parseInt(account);
+
+
+    // if(pinNumber === 1234){
+    //     const sub = mainBalace - totalAmount;
+    //     document.getElementById('main-balance').innerText = sub;
+    // }
+    // else{
+    //     alert('enter valid PIN')
+    // }
+    
+    const account = document.getElementById('account').value;
+
+    const amount = getInputValueById('cash-out-amount');
+    const pin = getInputValueById('pin');
+    const mainBalace = getInnerTextById('main-balance')
+
+
+    if(account.length === 11){
+        if(pin === 1234){
+            const sub = mainBalace - amount;
+            setInnerTextById('main-balance', sub);
+        }
+        else{
+            alert('enter valid PIN')
+        }
     }
     else{
-        alert('enter valid PIN')
+        alert('enter valid account')
     }
+    
 })
