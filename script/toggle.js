@@ -14,6 +14,7 @@ document.getElementById('add-money-btn')
     // pass id and status
     handleToggle('add-money', 'block');
     handleToggle('cash-out', 'none');
+    handleToggle('Transaction-history', 'none');
 
 })
 
@@ -26,5 +27,6 @@ document.getElementById('cash-out-btn')
 
     handleToggle('add-money', 'none');
     handleToggle('cash-out', 'block');
+    handleToggle('Transaction-history', 'none');
 
 })

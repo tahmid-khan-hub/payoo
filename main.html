@@ -44,7 +44,7 @@
                         <img class="mx-auto" src="./Group (5).png" alt="">
                         <p class="text-[#08080880] text-center">Pay bill</p>
                     </button>
-                    <button class="box hover:bg-sky-100 border-2 m-2 p-2 rounded-md">
+                    <button id="Transaction-btn" class="box hover:bg-sky-100 border-2 m-2 p-2 rounded-md">
                         <img class="mx-auto" src="./Group (5).png" alt="">
                         <p class="text-[#08080880] text-center">Transaction</p>
                     </button>
@@ -58,11 +58,11 @@
                           <div class="card w-full shrink-0 shadow-2xl">
                             <form class="card-body">
                                 <legend class="text-black text-base">Select A Bank</legend>
-                                <select class="select w-full bg-slate-100 text-black">
+                                <select id="all-bank" class="select w-full bg-slate-100 text-black">
                                     <option disabled selected>Select A Bank</option>
                                     <option value="Bkash">Bkash</option>
-                                    <option value="Nagad">Nagad</option>
-                                    <option value="DBBL">DBBL</option>
+                                    <option value="Nagad">nagad</option>
+                                    <option value="DBBL">DbbL</option>
                                     
                                 </select>
                               <div class="form-control">
@@ -127,6 +127,12 @@
                         </div>
                     </div>
                 </section>
+
+                <section id="Transaction-history">
+                  <div id="Transaction-container">
+
+                  </div>
+                </section>
             </section>
         </header>
     </section>
@@ -135,5 +141,6 @@
     <script src="./script/toggle.js"></script>
     <script src="./script/add-money.js"></script>
     <script src="./script/cash-out.js"></script>
+    <script src="./script/transaction.js"></script>
 </body>
 </html>

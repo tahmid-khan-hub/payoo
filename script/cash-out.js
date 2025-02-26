@@ -31,11 +31,36 @@ document.getElementById('cash-out-withdraw')
     const pin = getInputValueById('pin');
     const mainBalace = getInnerTextById('main-balance')
 
+    if(amount > mainBalace){
+        alert('invalid amount');
+        return;
+    }
+
 
     if(account.length === 11){
         if(pin === 1234){
             const sub = mainBalace - amount;
             setInnerTextById('main-balance', sub);
+
+            const container = document.getElementById('Transaction-container');
+
+            // const p = document.createElement('p');
+            // p.innerText = `
+            // cash out ${amount} from this ${account} account
+            // `
+
+
+            const div =  document.createElement('div');
+            div.classList.add('bg-blue-100')
+
+            div.innerHTML = `
+            <h1> cash out money</h1>
+            <h3> Amount is: ${amount}</h3>
+            <p> Account number is: ${account}</p>
+            `
+            
+            container.appendChild(div);
+
         }
         else{
             alert('enter valid PIN')
